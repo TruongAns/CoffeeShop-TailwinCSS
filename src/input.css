@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.dta-top-menu-item {
+  @apply relative cursor-pointer py-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:transition-all after:bg-light-coffee after:duration-300 after:ease-in-out hover:text-gray-800 hover:after:w-full;
+}
+
+.dta-icon {
+  @apply w-5 h-5 inline-block;
+}
+
+.dta-badge-circle {
+  @apply text-xs text-center rounded-full px-1.5;
+}
