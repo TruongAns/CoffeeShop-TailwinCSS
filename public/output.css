@@ -575,6 +575,14 @@ video {
   margin-right: auto;
 }
 
+.mb-16{
+  margin-bottom: 4rem;
+}
+
+.mb-32{
+  margin-bottom: 8rem;
+}
+
 .mb-6{
   margin-bottom: 1.5rem;
 }
@@ -587,12 +595,28 @@ video {
   margin-left: 4rem;
 }
 
+.ml-2{
+  margin-left: 0.5rem;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
+}
+
 .inline-block{
   display: inline-block;
 }
 
 .flex{
   display: flex;
+}
+
+.grid{
+  display: grid;
 }
 
 .hidden{
@@ -610,6 +634,10 @@ video {
 
 .h-full{
   height: 100%;
+}
+
+.w-\[95\%\]{
+  width: 95%;
 }
 
 .w-full{
@@ -664,6 +692,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-20{
+  gap: 5rem;
+}
+
 .gap-8{
   gap: 2rem;
 }
@@ -690,6 +722,14 @@ video {
 
 .bg-opacity-40{
   --tw-bg-opacity: 0.4;
+}
+
+.bg-\[url\(\'\.\/images\/mug_01\.jpg\'\)\]{
+  background-image: url('./images/mug_01.jpg');
+}
+
+.bg-\[url\(\'\.\/images\/mug_02\.jpg\'\)\]{
+  background-image: url('./images/mug_02.jpg');
 }
 
 .bg-slider-bg{
@@ -817,9 +857,24 @@ video {
   color: rgb(162 95 75 / var(--tw-text-opacity, 1));
 }
 
+.text-coffee-600{
+  --tw-text-opacity: 1;
+  color: rgb(116 72 56 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-400{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+}
+
 .text-gray-500{
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-600{
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
 }
 
 .text-gray-900{
@@ -830,6 +885,10 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.line-through{
+  text-decoration-line: line-through;
 }
 
 .dta-topmenu-expanded{
@@ -942,6 +1001,71 @@ video {
   opacity: 0.8;
 }
 
+/* card item */
+
+/* dta-sale-product */
+
+.dta-product-item{
+  height: 440px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 576px){
+  .dta-product-item{
+    height: 540px;
+  }
+}
+
+.dta-model-product-item{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.dta-model-product-item:hover{
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity, 1));
+  --tw-bg-opacity: 0.2;
+}
+
+.dta-btn-product-item{
+  position: absolute;
+  left: 5%;
+  bottom: 0.5rem;
+  display: none;
+  width: 90%;
+  cursor: pointer;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.dta-btn-product-item:hover{
+  opacity: 0.9;
+}
+
+.dta-sticker-sale-item{
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .after\:absolute::after{
   content: var(--tw-content);
   position: absolute;
@@ -1000,6 +1124,26 @@ video {
   background-color: rgb(162 95 75 / var(--tw-bg-opacity, 1));
 }
 
+.group:hover .group-hover\:block{
+  display: block;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.group:hover .group-hover\:animate-fadeIn{
+  animation: fadeIn .5s ease-in-out;
+}
+
 @media (min-width: 576px){
   .sm\:inline{
     display: inline;
@@ -1017,6 +1161,14 @@ video {
 }
 
 @media (min-width: 768px){
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:gap-4{
+    gap: 1rem;
+  }
+
   .md\:px-32{
     padding-left: 8rem;
     padding-right: 8rem;
@@ -1035,6 +1187,10 @@ video {
 
   .lg\:hidden{
     display: none;
+  }
+
+  .lg\:w-\[80\%\]{
+    width: 80%;
   }
 
   .lg\:basis-1\/6{
@@ -1060,6 +1216,10 @@ video {
 }
 
 @media (min-width: 1280px){
+  .xl\:w-\[65\%\]{
+    width: 65%;
+  }
+
   .xl\:px-96{
     padding-left: 24rem;
     padding-right: 24rem;

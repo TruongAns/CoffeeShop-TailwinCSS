@@ -37,3 +37,21 @@
 .dta-subheadline-lable {
   @apply uppercase text-[#1d1f2e] text-[12px] tracking-wide font-medium opacity-80 mx-2;
 }
+
+/* card item */
+
+/* dta-sale-product */
+.dta-product-item {
+  @apply bg-cover bg-no-repeat bg-center h-[440px] sm:h-[540px];
+}
+.dta-model-product-item {
+  @apply w-full h-full hover:bg-opacity-20 hover:bg-zinc-800 transition-all duration-300 relative;
+}
+
+.dta-btn-product-item {
+  @apply absolute uppercase w-[90%] left-[5%] bottom-2 text-center bg-white py-4 text-sm tracking-widest hidden hover:opacity-90 cursor-pointer;
+}
+
+.dta-sticker-sale-item {
+  @apply bg-white absolute top-2 right-2 px-4 py-2;
+}
