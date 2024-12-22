@@ -7,7 +7,12 @@ module.exports = {
         sm: '576px',
       },
       colors: {
-        'light-coffee': '#C89F94',
+        coffee: {
+          50: '#e8d6d0',
+          200: '#C89F94',
+          400: '#A25F4B',
+          600: '#744838',
+        },
       },
 
       fontFamily: {
