@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DTA</title>
     <link href="./output.css" rel="stylesheet" />
+    <script src="./main.js" async></script>
   </head>
 
   <body>
     <div class="root">
       <div
-        class="content-wrapper mx-auto max-w-screen-2xl bg-slate-200 px-8 text-base"
+        class="content-wrapper font-Karla mx-auto max-w-screen-2xl bg-slate-200 px-8 text-base"
       >
-        <header class="mx-10 py-6">
-          <nav class="flex flex-row items-center justify-between">
+        <header class="mx-2 lg:mx-10 py-6">
+          <nav class="flex flex-row items-center justify-between relative">
             <!-- logo -->
             <div
               class="logo basis-2/6 cursor-pointer text-center text-xl font-semibold"
@@ -22,9 +23,10 @@
             </div>
             <!-- menu -->
             <ul
-              class="menu flex basis-3/6 items-center justify-start gap-8 text-sm font-medium uppercase text-gray-500"
+              id="dta-top-menu"
+              class="menu hidden basis-3/6 lg:flex lg:basis-2/6 lg:items-center lg:justify-start gap-8 text-sm font-medium uppercase text-gray-500"
             >
-              <li class="dta-top-menu-item">
+              <li class="dta-top-menu-item active">
                 <a href="#" class="">Home</a>
               </li>
 
@@ -49,7 +51,7 @@
             </ul>
             <!-- Cart -->
             <ul
-              class="basis-1/6 ml-16 uppercase text-sm text-gray-500 font-medium"
+              class="flex justify-end lg:justify-start items-center basis-3/6 lg:basis-1/6 ml-16 uppercase text-sm text-gray-500 font-medium"
             >
               <li class="dta-top-menu-item inline-block">
                 <a class="flex justify-start items-center" href="#">
@@ -68,13 +70,32 @@
                       d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
                     />
                   </svg>
-                  <span class="mx-2"> Cart </span>
+                  <span class="mx-2 hidden sm:inline"> Cart </span>
                   <span class="dta-badge-circle bg-orange-400 text-white"
                     >99+</span
                   >
                 </a>
               </li>
             </ul>
+            <div
+              id="dta-toggle-top-menu-icon"
+              class="basis-1/6 lg:hidden flex items-center cursor-pointer px-2 sm:px-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>
           </nav>
         </header>
         <main>
