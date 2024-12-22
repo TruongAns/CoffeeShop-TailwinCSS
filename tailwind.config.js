@@ -28,6 +28,10 @@ module.exports = {
         slideDown: 'slideDown .4s ease-in-out ',
         expandMenu: 'expandMenu .4s ease ',
       },
+
+      backgroundImage: {
+        'slider-bg': "url('./images/pic-slider.jpg')",
+      },
     },
   },
   plugins: [],
