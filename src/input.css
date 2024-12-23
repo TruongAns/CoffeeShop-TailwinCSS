@@ -4,11 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.dta-btn-primary {
+  @apply uppercase px-5 py-4 inline-block font-bold tracking-wider text-sm cursor-pointer hover:bg-opacity-95;
+}
+
 .dta-topmenu-expanded {
   @apply absolute top-10 z-50  w-full bg-white text-center animate-expandMenu overflow-hidden;
-  .dta-top-menu-item {
-    @apply mt-1;
-  }
+}
+.dta-top-menu-item {
+  @apply mt-1;
 }
 
 .dta-top-menu-item {
@@ -35,7 +39,7 @@
   @apply w-8 h-px bg-gray-200;
 }
 .dta-subheadline-lable {
-  @apply uppercase text-[#1d1f2e] text-[12px] tracking-wide font-medium opacity-80 mx-2;
+  @apply uppercase text-[#1d1f2e] text-[13px] tracking-wide font-medium opacity-80;
 }
 
 /* card item */
@@ -54,4 +58,8 @@
 
 .dta-sticker-sale-item {
   @apply bg-white absolute top-2 right-2 px-2 py-1;
+}
+
+.dta-bg-init {
+  @apply bg-cover bg-no-repeat bg-center;
 }
