@@ -8,6 +8,9 @@
   @apply uppercase px-5 py-4 inline-block font-bold tracking-wider text-sm cursor-pointer hover:bg-opacity-95;
 }
 
+.dta-logo {
+  @apply basis-2/6 cursor-pointer  text-xl font-semibold;
+}
 .dta-topmenu-expanded {
   @apply absolute top-10 z-50  w-full bg-white text-center animate-expandMenu overflow-hidden;
 }

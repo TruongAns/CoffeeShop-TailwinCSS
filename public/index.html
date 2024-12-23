@@ -16,11 +16,7 @@
         <header class="mx-2 lg:mx-10 py-6">
           <nav class="flex flex-row items-center justify-between relative">
             <!-- logo -->
-            <div
-              class="logo basis-2/6 cursor-pointer text-center text-xl font-semibold"
-            >
-              CoffeeStyle.
-            </div>
+            <div class="dta-logo text-center"> CoffeeStyle. </div>
             <!-- menu -->
             <ul
               id="dta-top-menu"
@@ -99,6 +95,7 @@
           </nav>
         </header>
         <main>
+          <!--Slider-->
           <div
             class="slider h-[530px] bg-slider-bg bg-cover bg-no-repeat bg-bottom"
           >
@@ -656,8 +653,9 @@
           </div>
           <!--End lifestyle-stories-->
 
+          <!--Subscribe-us-->
           <div
-            class="subscribe-us h-[400px] md:h-[330px] bg-[#1D1F2F] flex flex-col gap-6 justify-center items-center"
+            class="subscribe-us h-[400px] md:h-[330px] bg-[#1D1F2F] flex flex-col gap-6 justify-center items-center mb-28"
           >
             <div class="dta-subheadline text-">
               <div class="dta-subheadline-deco-line"></div>
@@ -666,17 +664,91 @@
               </div>
               <div class="dta-subheadline-deco-line"></div>
             </div>
-            <div class="font-medium text-3xl sm:text-4xl text-white">Coffee Updates</div>
-            <div class="form w-[80%] ">
-              <div class="form-group   flex flex-col  justify-center self-stretch   gap-4 md:flex-row md:items-stretch md:justify-center">
-                <input class=" text-center md:text-left h-14 form-item w-[100%] md:w-[350px]   outline-none border-[1px] border-gray-700 hover:border-gray-300 focus:border-gray-300 br  px-4 placeholder:text-gray-400 bg-inherit text-white " placeholder="dta@gmail.com"></input>
-                <div class="h-14 form-item uppercase flex justify-center items-center px-7 bg-white text-slate-900 font-bold tracking-wider text-sm cursor-pointer hover:bg-opacity-95">Subscribe</div>
+            <div class="font-medium text-3xl sm:text-4xl text-white"
+              >Coffee Updates</div
+            >
+            <div class="form w-[80%]">
+              <div
+                class="form-group flex flex-col justify-center self-stretch gap-4 md:flex-row md:items-stretch md:justify-center"
+              >
+                <input
+                  class="text-center md:text-left h-14 form-item w-[100%] md:w-[350px] outline-none border-[1px] border-gray-700 hover:border-gray-300 focus:border-gray-300 br px-4 placeholder:text-gray-400 bg-inherit text-white"
+                  placeholder="dta@gmail.com"
+                />
+                <div
+                  class="h-14 form-item uppercase flex justify-center items-center px-7 bg-white text-slate-900 font-bold tracking-wider text-sm cursor-pointer hover:bg-opacity-95"
+                  >Subscribe</div
+                >
               </div>
             </div>
           </div>
           <!--End subscribe-us-->
         </main>
-        <footer>footer</footer>
+        <footer>
+          <div
+            class="w-[95%] lg:w-[80%] xl:w-[60%] mx-auto flex flex-col items-center justify-center text-center gap-y-16 md:gap-0 md:items-start md:text-left md:flex-row mb-8 md:mb-32 flex-wrap"
+          >
+            <!-- col 1 -->
+            <div class="md:basis-2/6 pr-6 order-5 md:order-1">
+              <div class="dta-logo mb-4">CoffeeStyle.</div>
+              <div class="text-gray-400 text-sm mb-20"
+                >Delivering the best coffee life since 1996. From coffee geeks
+                to the real ones.</div
+              >
+              <div class="text-sm text-gray-300">CoffeeStyle Inc. © 1996</div>
+            </div>
+            <!-- col 2 -->
+            <div class="md:basis-1/6 order-2">
+              <div class="dta-subheadline-lable mb-4">Menu</div>
+              <div>
+                <div class="text-sm text-gray-400 mb-2 hover:text-coffee-600">
+                  <a href="#!">Home</a></div
+                >
+                <div class="text-sm text-gray-400 mb-2 hover:text-coffee-600">
+                  <a href="#!">Our Products</a>
+                </div>
+                <div class="text-sm text-gray-400 mb-2 hover:text-coffee-600">
+                  <a href="#!">About</a>
+                </div>
+                <div class="text-sm text-gray-400 mb-2 hover:text-coffee-600">
+                  <a href="#!">Contact</a>
+                </div>
+                <div class="text-sm text-gray-400 mb-2 hover:text-coffee-600">
+                  <a href="#!">Styleguide</a>
+                </div>
+              </div>
+            </div>
+            <!-- col 3 -->
+            <div class="md:basis-1/6 order-3">
+              <div class="dta-subheadline-lable mb-4">Follow Us</div>
+              <div>
+                <div class="text-sm text-gray-400 mb-2 hover:text-coffee-600">
+                  <a href="#!">Facebook</a>
+                </div>
+                <div class="text-sm text-gray-400 mb-2 hover:text-coffee-600">
+                  <a href="#!">Instagram</a>
+                </div>
+                <div class="text-sm text-gray-400 mb-2 hover:text-coffee-600">
+                  <a href="#!">Pinterest</a>
+                </div>
+                <div class="text-sm text-gray-400 mb-2 hover:text-coffee-600">
+                  <a href="#!">Twitter</a>
+                </div>
+              </div>
+            </div>
+            <!-- col 4 -->
+            <div class="md:basis-2/6 order-4">
+              <div class="dta-subheadline-lable mb-4">Contact Us</div>
+              <div class="text-sm text-gray-400 mb-3"
+                >We’re Always Happy to Help</div
+              >
+              <div class="text-xl text-gray-800 mb-8 hover:text-coffee-600">
+                <a href="mailto:us@coffeestyle.io">us@coffeestyle.io</a>
+              </div>
+              <div class="text-sm text-gray-400">Powered by Webflow</div>
+            </div>
+          </div>
+        </footer>
         <!--End footer-->
       </div>
       <!--End content-wrapper-->
