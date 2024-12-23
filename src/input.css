@@ -36,7 +36,7 @@
   @apply flex justify-center items-center;
 }
 .dta-subheadline-deco-line {
-  @apply w-8 h-px bg-gray-200;
+  @apply w-8 h-px bg-gray-200 hidden text-center  sm:block sm:text-left;
 }
 .dta-subheadline-lable {
   @apply uppercase text-[#1d1f2e] text-[13px] tracking-wide font-medium opacity-80;
