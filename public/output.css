@@ -560,6 +560,10 @@ video {
   position: relative;
 }
 
+.left-\[calc\(-50vw\+50\%\)\]{
+  left: calc(-50vw + 50%);
+}
+
 .order-1{
   order: 1;
 }
@@ -593,10 +597,6 @@ video {
 
 .mb-6{
   margin-bottom: 1.5rem;
-}
-
-.mb-60{
-  margin-bottom: 15rem;
 }
 
 .mb-8{
@@ -640,12 +640,16 @@ video {
   height: 1.5rem;
 }
 
-.h-\[280px\]{
-  height: 280px;
+.h-\[200px\]{
+  height: 200px;
 }
 
 .h-\[350px\]{
   height: 350px;
+}
+
+.h-\[380px\]{
+  height: 380px;
 }
 
 .h-\[440px\]{
@@ -660,16 +664,40 @@ video {
   height: 100%;
 }
 
-.h-\[200px\]{
-  height: 200px;
-}
-
 .w-\[95\%\]{
   width: 95%;
 }
 
+.w-\[calc\(100vw-17px\)\]{
+  width: calc(100vw - 17px);
+}
+
 .w-full{
   width: 100%;
+}
+
+.w-\[calc\(100vw-8px\)\]{
+  width: calc(100vw - 8px);
+}
+
+.w-\[calc\(100vw-9px\)\]{
+  width: calc(100vw - 9px);
+}
+
+.w-\[calc\(100vw-10px\)\]{
+  width: calc(100vw - 10px);
+}
+
+.w-\[calc\(100vw-6px\)\]{
+  width: calc(100vw - 6px);
+}
+
+.w-\[calc\(100vw-5px\)\]{
+  width: calc(100vw - 5px);
+}
+
+.w-\[calc\(100vw-4px\)\]{
+  width: calc(100vw - 4px);
 }
 
 .max-w-screen-2xl{
@@ -809,6 +837,10 @@ video {
   background-image: url('./images/mug_02.jpg');
 }
 
+.bg-\[url\(\'\.\/images\/parallax\.jpg\'\)\]{
+  background-image: url('./images/parallax.jpg');
+}
+
 .bg-\[url\(\'\.\/images\/product-01\.jpg\'\)\]{
   background-image: url('./images/product-01.jpg');
 }
@@ -851,6 +883,10 @@ video {
 
 .bg-cover{
   background-size: cover;
+}
+
+.bg-fixed{
+  background-attachment: fixed;
 }
 
 .bg-bottom{
@@ -1183,6 +1219,40 @@ video {
   background-repeat: no-repeat;
 }
 
+/* Toàn bộ thanh cuộn */
+
+::-webkit-scrollbar {
+  width: 8px;
+  /* Độ rộng thanh cuộn dọc */
+  height: 8px;
+  /* Độ cao thanh cuộn ngang */
+}
+
+/* Đường dẫn (Track) của thanh cuộn */
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  /* Màu nền của thanh cuộn */
+  border-radius: 10px;
+  /* Bo góc đường dẫn */
+}
+
+/* Thanh trượt (Thumb) */
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  /* Màu của thanh trượt */
+  border-radius: 10px;
+  /* Bo góc thanh trượt */
+}
+
+/* Thanh trượt khi hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  /* Màu khi hover */
+}
+
 .after\:absolute::after{
   content: var(--tw-content);
   position: absolute;
@@ -1262,16 +1332,12 @@ video {
     display: inline;
   }
 
-  .sm\:h-\[540px\]{
-    height: 540px;
-  }
-
-  .sm\:h-\[280px\]{
-    height: 280px;
-  }
-
   .sm\:h-\[340px\]{
     height: 340px;
+  }
+
+  .sm\:h-\[540px\]{
+    height: 540px;
   }
 
   .sm\:px-16{
