@@ -11,7 +11,7 @@
   <body>
     <div class="root">
       <div
-        class="content-wrapper font-Karla mx-auto max-w-screen-2xl px-8 text-base"
+        class="content-wrapper font-Karla mx-auto max-w-screen-2xl px-2 sm:px-8 text-base"
       >
         <header class="mx-2 lg:mx-10 py-6">
           <nav class="flex flex-row items-center justify-between relative">
@@ -656,14 +656,24 @@
           </div>
           <!--End lifestyle-stories-->
 
-          <div class="dta-subheadline">
-            <div class="dta-subheadline-deco-line"></div>
-            <div class="dta-subheadline-lable mx-2">
-              Sign up and get free coffee bags
+          <div
+            class="subscribe-us h-[400px] md:h-[330px] bg-[#1D1F2F] flex flex-col gap-6 justify-center items-center"
+          >
+            <div class="dta-subheadline text-">
+              <div class="dta-subheadline-deco-line"></div>
+              <div class="dta-subheadline-lable mx-2 !text-gray-300">
+                Sign up and get free coffee bags
+              </div>
+              <div class="dta-subheadline-deco-line"></div>
             </div>
-            <div class="dta-subheadline-deco-line"></div>
+            <div class="font-medium text-3xl sm:text-4xl text-white">Coffee Updates</div>
+            <div class="form w-[80%] ">
+              <div class="form-group   flex flex-col  justify-center self-stretch   gap-4 md:flex-row md:items-stretch md:justify-center">
+                <input class=" text-center md:text-left h-14 form-item w-[100%] md:w-[350px]   outline-none border-[1px] border-gray-700 hover:border-gray-300 focus:border-gray-300 br  px-4 placeholder:text-gray-400 bg-inherit text-white " placeholder="dta@gmail.com"></input>
+                <div class="h-14 form-item uppercase flex justify-center items-center px-7 bg-white text-slate-900 font-bold tracking-wider text-sm cursor-pointer hover:bg-opacity-95">Subscribe</div>
+              </div>
+            </div>
           </div>
-          <div class="subscribe-us">subscribe-us</div>
           <!--End subscribe-us-->
         </main>
         <footer>footer</footer>
